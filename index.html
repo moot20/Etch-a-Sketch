@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Etch-a-Sketch</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="header">
@@ -17,23 +17,24 @@
       <div class="size">
         <p>Choose Grid-Size:</p>
         <div class="buttons">
-          <button>16x16</button>
-          <button>32x32</button>
-          <button>64x64</button>  
+          <button id="btn16">16x16</button>
+          <button id="btn32">32x32</button>
+          <button id="btn64">64x64</button>  
         </div>
       </div>
       <hr size="4" width="90%" color=#283845>
       <div class="color">
         <p>Choose Color:</p>
         <div class="buttons">
-          <button>Black</button>
-          <button>Surprise me!</button>
+          <button id="btnBlack">Black</button>
+          <button id="btnSurprise">Surprise me!</button>
           </div>
-      </div>
+        </div>
+        <hr size="4" width="90%" color=#283845>
+        <button id="btnCl">Clear</button>
     </div>
     <div class="grid-bg">
-      <div class="grid">
-
+      <div id="grid">
       </div>
     </div>
     <img src="https://www.transparentpng.com/thumb/paint-brush/vL1cQT-paint-brush-transparent-image.png" alt="black paint brush pencil transparent Image @transparentpng.com">
