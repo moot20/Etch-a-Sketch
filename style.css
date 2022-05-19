@@ -5,6 +5,10 @@ body {
   font-family: Tahoma;
 }
 
+hr {
+  margin: 20px 0;
+}
+
 .header {
   background-color: #283845;
   margin: 0 110px 0 110px;
@@ -30,11 +34,13 @@ h1 {
   margin: 50px 110px 0 110px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .settings {
   width: 220px;
-  height: 450px;
+  max-width: 220px;
+  min-height: 450px;
   background-color: #F2D492;
   border-radius: 15px;
   flex: 1 0 auto;
@@ -46,28 +52,8 @@ h1 {
   padding: 10px;
 }
 
-.grid-bg {
-  width: 450px;
-  height: 450px;
-  background-color: #F2D492;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.grid {
-  width: 430px;
-  height: 430px;
-  background-color: whitesmoke;
-}
-
-img {
-  height: 250px;
-  width: auto;
-  margin-right: 50px;
-  margin-left: 50px;
+.color > p {
+  margin-top: 0;
 }
 
 .size > p,
@@ -91,4 +77,43 @@ img {
   justify-content: center;
   align-items: center;
   gap: 15px;
+}
+
+#btnCl {
+  color: whitesmoke;
+  background-color: #283845;
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+}
+
+.grid-bg {
+  width: 450px;
+  height: 450px;
+  background-color: #F2D492;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  width: 430px;
+  height: 430px;
+  background-color: white;
+}
+
+.grid-element {
+  user-select: none;
+}
+
+img {
+  height: 250px;
+  width: auto;
+  margin-right: 50px;
+  margin-left: 50px;
 }
